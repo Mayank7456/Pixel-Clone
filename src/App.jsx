@@ -41,7 +41,7 @@ const App = () => {
 
 
   return (
-    <Router>
+    <Router >
       <Navbar setSearch={setSearch} />
       <Routes>
         <Route path="/" 
@@ -50,7 +50,7 @@ const App = () => {
          loader={loader}
           saved={saved}
            setSaved={setSaved} />} />
-        <Route path="/saved" element={<Saved  saved={saved} loader={loader} />} />
+        <Route path="/Saved" element={<Saved  saved={saved} loader={loader} />} />
       </Routes>
     </Router>
   );
